@@ -83,7 +83,7 @@
             <div v-else-if="aiAdviceText" class="ai-content" key="content">
               <div class="ai-text-box">
                 <div class="ai-avatar">👨‍⚕️</div>
-                <div class="ai-message">{{ aiAdviceText }}</div>
+                <div class="ai-message markdown-body" v-html="formattedAiAdvice"></div>
               </div>
             </div>
             
